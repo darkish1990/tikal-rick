@@ -12,10 +12,8 @@ export const Part1 = () => {
                 const { data: locationData } = await axios.get(`${BASE_URL}/${LOCATION}/?name=${ORIGIN_NAME}`);
                 setLocation(locationData.results[0]);
                 await locationData.results[0].residents.forEach(async (residentDataUrlString) => {
-                    const { data } = await axios.get(residentDataUrlString);
-                    setOriginLocationChars((prev) => {
-                        return [...prev, data];
-                    });
+                    const { data: residentData } = await axios.get(residentDataUrlString);
+                    setOriginLocationChars((prev) => [...prev, residentData]);
                 });
             } catch (error) {
                 console.log(error);
