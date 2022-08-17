@@ -5,8 +5,6 @@ import axios from "axios";
 export const useFetchUnpopularCharacter = () => {
     const [location, setLocation] = useState();
     const [originLocationCharacters, setOriginLocationCharacters] = useState([]);
-    const sortedCharctersList = useMemo(() => originLocationCharacters.sort((a, b) => a.episode.length - b.episode.length), [originLocationCharacters]);
-    const unpopularCharacter = sortedCharctersList[0];
 
     useEffect(() => {
         const fetchFunction = async () => {
@@ -24,5 +22,9 @@ export const useFetchUnpopularCharacter = () => {
         };
         fetchFunction();
     }, []);
+
+    const sortedCharctersList = useMemo(() => originLocationCharacters.sort((a, b) => a.episode.length - b.episode.length), [originLocationCharacters]);
+    const unpopularCharacter = sortedCharctersList[0];
+
     return { unpopularCharacter, location }
 }
