@@ -4,7 +4,7 @@ import "./Part1.css";
 export const Part1 = () => {
     const { unpopularCharacter, location } = useFetchUnpopularCharacter()
     return (
-        <div className="container">
+        <div className="part1-container">
             <table>
                 <tbody>
                     <tr>

@@ -1,15 +1,15 @@
-.container{
-    margin: 50px;
+.part1-container{
+    margin: 100px;
     display:flex;
     justify-content:center;
     align-items:center;
 }
 
-.container table{
+.part1-container table{
     border-collapse: collapse
 }
 
-.container td{
+.part1-container td{
     width: 250px;
     border: solid 2px #000;
     text-align: left;

@@ -15,7 +15,7 @@ export const useFetchUnpopularCharacter = () => {
                     const { data: residentData } = await axios.get(residentDataUrlString);
                     return residentData
                 }));
-                setOriginLocationCharacters((await charactersDataPromiseArray).map(fulfilledPromise => fulfilledPromise.value));
+                setOriginLocationCharacters((await charactersDataPromiseArray).filter(promise => promise.status === "fulfilled").map(promiseRespone => promiseRespone.value));
             } catch (error) {
                 console.log(error);
             }
