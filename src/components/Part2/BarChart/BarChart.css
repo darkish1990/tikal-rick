@@ -3,7 +3,6 @@
     width: 70%;
     height: 100%;
     flex-direction: row;
-    gap: 100px;
     justify-content: center;
     align-items: flex-end;
     border-bottom: 1px solid black;
