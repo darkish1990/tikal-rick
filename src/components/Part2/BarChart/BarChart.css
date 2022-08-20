@@ -6,6 +6,7 @@
     gap: 100px;
     justify-content: center;
     align-items: flex-end;
+    border-bottom: 1px solid black;
 }
 .bar{
     background-color: red;

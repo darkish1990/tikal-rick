@@ -6,6 +6,7 @@
     justify-content: center;
     align-items: flex-start;
     border:  black 2px solid;
+    margin-left: 50px;
 }
 .single-name{
     display: flex;
