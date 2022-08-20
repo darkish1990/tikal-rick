@@ -1,0 +1,20 @@
+.bars-container{
+    display: flex;
+    width: 70%;
+    height: 100%;
+    flex-direction: row;
+    gap: 100px;
+    justify-content: center;
+    align-items: flex-end;
+}
+.bar{
+    background-color: red;
+    width: 50px;
+    position: relative;
+
+}
+.character-name{
+ position: absolute;
+ top: -50px;
+ left: -4px;
+}

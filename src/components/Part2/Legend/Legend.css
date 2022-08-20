@@ -1,0 +1,21 @@
+.legend-container{
+    display:flex;
+    flex-direction: column;
+    width: fit-content;
+    height: auto;
+    justify-content: center;
+    align-items: flex-start;
+    border:  black 2px solid;
+}
+.single-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
+.sqaure{
+    height: 14px;
+    width: 14px;
+    margin-right: 10px;
+}
