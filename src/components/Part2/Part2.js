@@ -8,11 +8,11 @@ import { popularityComputation } from '../../utils/utils'
 export const Part2 = () => {
     const { characters } = useFetchCharctersByNames()
     const containerMaxValue = Math.max(...characters.map(character => character.episode?.length))
-    const computedCharacters = popularityComputation(characters,containerMaxValue)
+    const computedCharacters = popularityComputation(characters, containerMaxValue)
     return (
         <div className='bar-chart-container' style={{ height: `${containerMaxValue + 150}px` }}>
             <BarChart characters={computedCharacters} />
-            <Legend characters={computedCharacters}  containerMaxValue={containerMaxValue}/>
+            <Legend characters={computedCharacters} />
         </div>
     )
 }

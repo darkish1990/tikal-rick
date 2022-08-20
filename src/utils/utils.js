@@ -8,5 +8,10 @@ export const popularityComputation = (characters, maxValue) => {
 }
 
 export const rollAColor=()=>{
-    return `#${Math.floor(Math.random()*16777215).toString(16)}`
+    const hexaDecimalNumber = Math.floor(Math.random()*16777215).toString(16)
+    if (hexaDecimalNumber.length === 6) {
+        return `#${hexaDecimalNumber}`
+    }
+        return `#${hexaDecimalNumber}0`
+        
 }

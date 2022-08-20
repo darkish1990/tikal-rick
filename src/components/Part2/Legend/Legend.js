@@ -1,7 +1,7 @@
 import React from 'react'
 import './Legend.css'
 
-export const Legend = ({characters,containerMaxValue}) => {
+export const Legend = ({characters}) => {
   return (
     <div className='legend-container'>
         {characters.map(character=>{
