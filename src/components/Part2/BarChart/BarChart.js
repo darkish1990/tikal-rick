@@ -3,7 +3,7 @@ import './BarChart.css'
 
 export const BarChart = ({ characters }) => {
     return (
-        <div className='bars-container' >
+        <div className='bars-container' style={{ gap: `calc(35%/${characters.length})` }} >
             {characters.map(character => {
                 return (<>
                     <div
