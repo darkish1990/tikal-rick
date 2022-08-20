@@ -11,7 +11,8 @@ export const BarChart = ({ characters }) => {
                         title={character.name}
                         style={{
                             height: `${character.popularityPrecent}%`,
-                            background: character.color
+                            background: character.color,
+                            width:`calc(35%/${characters.length})`
                         }}>
                         <span className='character-name'>{character.name}</span>
                     </div>
